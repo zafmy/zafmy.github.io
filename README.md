@@ -5,6 +5,7 @@ Personal resume site for **Mohamad Zafir bin Nadzri** — live at [zafmy.github.
 ## Structure
 
 - `index.html` — single-file resume page (HTML + CSS, no build step)
+- `images/profile.png` — profile photo used in the header
 - `Mohamad-Zafir-Resume.docx` — downloadable Word version
 
 ## Local preview

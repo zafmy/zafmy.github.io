@@ -26,9 +26,20 @@
   }
   .container { max-width: 880px; margin: 0 auto; padding: 48px 28px 80px; }
   header.hero {
+    display: flex;
+    align-items: center;
+    gap: 26px;
     padding-bottom: 22px;
     border-bottom: 2px solid var(--accent);
     margin-bottom: 28px;
+  }
+  header.hero .avatar {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    flex-shrink: 0;
   }
   header.hero h1 { margin: 0 0 6px; font-size: 2rem; letter-spacing: 0.3px; }
   header.hero .sub { color: var(--muted); font-size: 1rem; }
@@ -96,6 +107,8 @@
   }
   footer a { color: var(--accent); }
   @media (max-width: 560px) {
+    header.hero { flex-direction: column; align-items: flex-start; gap: 16px; }
+    header.hero .avatar { width: 88px; height: 88px; }
     header.hero h1 { font-size: 1.6rem; }
     .container { padding: 28px 18px 60px; }
   }
@@ -109,6 +122,8 @@
 <body>
   <div class="container">
     <header class="hero">
+      <img class="avatar" src="images/profile.png" alt="Photo of Mohamad Zafir bin Nadzri" width="112" height="112">
+      <div class="hero-text">
       <h1>Mohamad Zafir bin Nadzri</h1>
       <div class="sub">AI Integration &amp; Full-Stack Developer · Tech Team Leader</div>
       <div class="contact">
@@ -123,6 +138,7 @@
         Shah Alam, Selangor, Malaysia
       </div>
       <a class="btn" href="Mohamad-Zafir-Resume.docx" download>Download .docx</a>
+      </div>
     </header>
 
     <div class="impact">
